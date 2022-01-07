@@ -1,0 +1,109 @@
+CRITICAL - 2022-01-07 09:10:54 --> syntax error, unexpected 'return' (T_RETURN), expecting ';'
+#0 /home/alfath2/Downloads/ci4-blog/system/Autoloader/Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile()
+#1 /home/alfath2/Downloads/ci4-blog/system/Autoloader/Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(790): class_exists()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#7 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#9 {main}
+CRITICAL - 2022-01-07 09:11:36 --> Invalid file: templates.header
+#0 /home/alfath2/Downloads/ci4-blog/system/View/View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+#1 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(10): view()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#4 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#8 {main}
+CRITICAL - 2022-01-07 09:11:52 --> Undefined variable: title
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/templates/header.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(10): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-07 09:11:53 --> Undefined variable: title
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/templates/header.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(10): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-07 09:11:53 --> Undefined variable: title
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/templates/header.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(10): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-07 09:11:54 --> Undefined variable: title
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/templates/header.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(10): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-07 10:07:51 --> Class 'App\Controllers\UserModel' not found
+#0 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Users->register()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#5 {main}
+CRITICAL - 2022-01-07 10:08:30 --> Class 'App\Models\User_model' not found
+#0 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Users->register()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#5 {main}
+CRITICAL - 2022-01-07 10:09:14 --> Class 'App\Models\User_model' not found
+#0 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Users->register()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#5 {main}
+CRITICAL - 2022-01-07 10:09:24 --> Class 'App\Models\User_model' not found
+#0 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Users->register()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#3 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#5 {main}
+CRITICAL - 2022-01-07 10:16:34 --> Undefined variable: title
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/templates/header.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Users.php(36): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Users->register()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
