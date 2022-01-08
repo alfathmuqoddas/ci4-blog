@@ -7,6 +7,7 @@ class Home extends BaseController
 {
     public function index()
     {	
+    	helper('form');
     	$db = db_connect();
     	$model = new Post_model();
 		$data['title'] = 'Home';

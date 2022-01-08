@@ -9,7 +9,7 @@
                 </div>
                 <?php endif; ?>
 
-                <form action="<?php echo base_url(); ?>/users/register" method="post">
+                <?php echo form_open('users/register'); ?>
                     <div class="form-group mb-3">
                         <input type="text" name="name" placeholder="Name" value="<?= set_value('name') ?>" class="form-control" >
                     </div>
@@ -32,7 +32,7 @@
                     <div class="d-grid">
                         <button type="submit" class="btn btn-dark">Signup</button>
                     </div>
-                </form>
+                <?php echo form_close(); ?>
             </div>
         </div>
     </div>

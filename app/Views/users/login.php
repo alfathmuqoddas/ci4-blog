@@ -3,7 +3,7 @@
     <div class="row justify-content-md-center">
         <div class="col-5">
             <h2>Login</h2>
-            <form action="<?php echo base_url(); ?>/users/login" method="post">
+            <?php echo form_open('users/login'); ?>
                 <div class="form-group mb-3">
                     <input type="email" name="email" placeholder="Email" class="form-control" >
                 </div>
@@ -15,7 +15,7 @@
                 <div class="d-grid">
                      <button type="submit" class="btn btn-success">Signin</button>
                 </div>     
-            </form>
+            <?php echo form_close(); ?>
         </div>  
     </div>
 </div>
