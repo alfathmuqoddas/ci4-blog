@@ -1,4 +1,4 @@
-<div class="container mt-5">
+<div class="container py-5" style="min-height: 71vh;">
         <div class="row justify-content-md-center">
             <div class="col-5">
                 <h2>Register User</h2>
@@ -7,7 +7,7 @@
                 <div class="alert alert-warning">
                    <?= $validation->listErrors() ?>
                 </div>
-                <?php endif;?>
+                <?php endif; ?>
 
                 <form action="<?php echo base_url(); ?>/users/register" method="post">
                     <div class="form-group mb-3">

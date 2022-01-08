@@ -16,7 +16,14 @@ class Users extends Controller{
             'confirmpassword'  => 'matches[password]'
         ];
           
-        if($this->validate($rules)){
+        if(!$this->validate($rules)){
+            $data['title'] = 'Register';
+            ;
+            echo view('templates/header', $data);
+            echo view('users/register', ['validation' => $this->validator,]);
+            echo view('templates/footer');
+            
+        }else{
             $userModel = new User_model();
 
             $data = [
@@ -27,15 +34,64 @@ class Users extends Controller{
             ];
 
             $userModel->save($data);
-
+            session()->setFlashdata('msg_success', 'Register successful, you can login now');
             return redirect()->to('/');
-        }else{
-            $data['title'] = 'Register';
-            $data['validation'] = $this->validator;
-            echo view('templates/header', $data);
-            echo view('users/register', $data);
-            echo view('templates/footer');
         }
           
+    }
+
+    public function login()
+    {
+        helper(['form']);
+        $session = session();
+
+        $userModel = new User_model();
+
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
+        
+        $data = $userModel->where('email', $email)->first();
+        
+        if($data){
+            $pass = $data['password'];
+            $authenticatePassword = password_verify($password, $pass);
+            if($authenticatePassword){
+                $ses_data = [
+                    'id' => $data['id'],
+                    'name' => $data['name'],
+                    'username' => $data['username'],
+                    'email' => $data['email'],
+                    'isLoggedIn' => TRUE
+                ];
+
+                $session->set($ses_data);
+                $session->setFlashdata('msg_success', 'Login successful');
+                return redirect()->to('/');
+            
+            }else{
+                $session->setFlashdata('msg_warning', 'Password is incorrect.');
+                $data['title'] = 'Login';
+                echo view('templates/header', $data);
+                echo view('users/login');
+                echo view('templates/footer');
+            }
+
+        }else{
+            $session->setFlashdata('msg_warning', 'Email does not exist.');
+            $data['title'] = 'Login';
+            echo view('templates/header', $data);
+            echo view('users/login');
+            echo view('templates/footer');
+        }
+    }
+
+    public function logout()
+    {
+        $session = session();
+
+        // destroy session
+        $session->destroy();
+
+        return redirect()->to('/');
     }
 }
