@@ -28,7 +28,7 @@ class Users extends Controller{
 
             $data = [
                 'name'     => $this->request->getVar('name'),
-                'username' => $this->request->getVar('username'),
+                'username' => preg_replace('/\s+/', '', $this->request->getVar('username')),
                 'email'    => $this->request->getVar('email'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
             ];

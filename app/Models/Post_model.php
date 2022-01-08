@@ -12,6 +12,7 @@ class Post_model extends Model{
 
 		if($id === false){
 			$builder->orderBy('posts.id', 'DESC');
+			$builder->select('*');
 			$builder->join('user2', 'user2.id = posts.user_id');
 			$query = $builder->get();
 			return $query->getResult();
