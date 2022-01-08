@@ -3,6 +3,17 @@
 	Home
 	</div>
 	<div class="container">
+        <?php if(session()->get('isLoggedIn')) : ?>
+            <?php echo form_open('posts/create') ?>
+                 <input type="text" name="body" placeholder="What's on your mind?" value="<?= set_value('body') ?>" class="form-control">
+                 <input type="submit" class="btn btn-primary" value="submit">
+            </form>
+        <?php endif; ?>
+
+        <?php if(!session()->get('isLoggedIn')) : ?>
+            <h2>Login to create shouts</h2>
+        <?php endif; ?>
+
         <?php foreach($posts as $row):?>
             <div>
             	<div class="d-flex align-items-center g-2">
