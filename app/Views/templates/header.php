@@ -11,34 +11,25 @@
     <title><?= $title ?></title>
   </head>
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 	  <div class="container">
 	    <a class="navbar-brand" href="<?php echo base_url(); ?>">Shouts!</a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
-	      <ul class="navbar-nav">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="<?php echo base_url(); ?>">Home</a>
-	        </li>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav">
+	        <a class="nav-link active" href="<?php echo base_url(); ?>">Home</a>
 	        <?php if(!session()->get('isLoggedIn')) : ?>
-	        <li class="nav-item">
-	          <a class="nav-link" href="<?php echo base_url(); ?>/users/login">Login</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="<?php echo base_url(); ?>/users/register">Register</a>
-	        </li>
+	        <a class="nav-link" href="<?php echo base_url(); ?>/users/login">Login</a>
+	        <a class="nav-link" href="<?php echo base_url(); ?>/users/register">Register</a>
 	    	<?php endif; ?>
 	    	<?php if(session()->get('isLoggedIn')) : ?>
-	    	<li class="nav-item">
-	          <a class="nav-link" href="<?php echo base_url(); ?>users/profile"><?= session()->get('username') ?></a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="<?php echo base_url(); ?>/users/logout">Logout</a>
-	        </li>
+	    	<a class="nav-link" href="<?php echo base_url(); ?>users/profile"><?= session()->get('username') ?></a>
+	    	<a class="nav-link" href="<?php echo base_url(); ?>/users/logout">Logout</a>
 	    	<?php endif; ?>
-	      </ul>
+	      </div>
 	    </div>
 	  </div>
 	</nav>

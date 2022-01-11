@@ -1,0 +1,117 @@
+CRITICAL - 2022-01-11 00:01:36 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::get() must be of the type int or null, string given, called in /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php on line 48
+#0 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(48): CodeIgniter\Database\BaseBuilder->get()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->storeMultipleFile()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#6 {main}
+CRITICAL - 2022-01-11 00:02:21 --> Undefined variable: post_id
+#0 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#6 {main}
+CRITICAL - 2022-01-11 00:02:45 --> Trying to get property 'title' of non-object
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/pages/form-details.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(67): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-11 00:17:56 --> Trying to get property 'title' of non-object
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/pages/form-details.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-11 00:18:22 --> Trying to get property 'title' of non-object
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/pages/form-details.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-11 00:18:23 --> Trying to get property 'title' of non-object
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/pages/form-details.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-11 00:19:32 --> Trying to get property 'title' of non-object
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/pages/form-details.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
+CRITICAL - 2022-01-11 00:21:30 --> The original file is not a valid file.
+#0 /home/alfath2/Downloads/ci4-blog/system/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(44): CodeIgniter\HTTP\Files\UploadedFile->move()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->storeMultipleFile()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#4 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#5 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#7 {main}
+CRITICAL - 2022-01-11 00:21:49 --> syntax error, unexpected '.'
+#0 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#4 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#8 {main}
+CRITICAL - 2022-01-11 00:22:00 --> syntax error, unexpected '.'
+#0 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#2 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#4 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#6 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#8 {main}
+CRITICAL - 2022-01-11 00:23:23 --> Trying to get property 'title' of non-object
+#0 /home/alfath2/Downloads/ci4-blog/app/Views/pages/form-details.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/alfath2/Downloads/ci4-blog/system/View/View.php(210): include('/home/alfath2/D...')
+#2 /home/alfath2/Downloads/ci4-blog/system/View/View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /home/alfath2/Downloads/ci4-blog/system/Common.php(1089): CodeIgniter\View\View->render()
+#4 /home/alfath2/Downloads/ci4-blog/app/Controllers/Form.php(68): view()
+#5 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Form->view()
+#6 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#7 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#8 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#10 {main}
