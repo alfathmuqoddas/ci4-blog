@@ -24,5 +24,10 @@
           <p><?= esc($row->name) ?></p>
         </div>
       <?php endforeach; ?>
+      <?php foreach($imgs as $img) :?>
+          <div>
+          <img src="<?= ROOTPATH . 'public/uploads/' . $img->name ?>" >
+        </div>
+      <?php endforeach; ?>
   </div>
 </div>

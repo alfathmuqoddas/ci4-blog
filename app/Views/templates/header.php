@@ -10,16 +10,16 @@
 
     <title><?= $title ?></title>
   </head>
-  <body>
+  <body class="bg-light">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
 	  <div class="container">
 	    <a class="navbar-brand" href="<?php echo base_url(); ?>">Shouts!</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	      <div class="navbar-nav">
+	      <div class="navbar-nav ms-auto">
 	        <a class="nav-link active" href="<?php echo base_url(); ?>">Home</a>
 	        <?php if(!session()->get('isLoggedIn')) : ?>
 	        <a class="nav-link" href="<?php echo base_url(); ?>/users/login">Login</a>
@@ -47,4 +47,4 @@
 	       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 	    </div>
 	<?php endif;?>
-</section>
+	</section>

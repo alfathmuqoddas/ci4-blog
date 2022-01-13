@@ -13,6 +13,7 @@ class User_model extends Model{
         'username',
         'email',
         'password',
+        'avatar',
         'created_at'
     ];
 

@@ -11,7 +11,9 @@ class Form extends Controller
          $data['title'] = 'Upload Images';
          $db = db_connect();
          $query = $db->table('products')->get();
+         $query2 = $db->table('file')->get();
          $data['posts'] = $query->getResult();
+         $data['imgs'] = $query2->getResult();
 
          echo view('templates/header', $data);
          echo view('pages/upload-image');

@@ -21,4 +21,9 @@ class Posts extends Controller
         session()->setFlashdata('msg_success', 'Data uploaded');
         return redirect()->to('/');
 	}
+
+	public function like()
+	{
+		
+	}
 }
