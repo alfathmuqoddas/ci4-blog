@@ -21,12 +21,12 @@
             <?php endif; ?>
 
             <div class="col col-12 col-md-8">
-                <div class="pt-3 px-3 bg-white">
+                <div class="py-3 mb-2 px-3 bg-white">
                     <h4 class="m-0">Shouts!</h4>
                 </div>
                 <?php foreach($posts as $row):?>
-                    <div class="d-flex">
-                        <img src="<?=base_url();?>/public/uploads/avatar/<?= $row->avatar ?>" alt="avatar" class="img-fluid">
+                    <!-- <div class="d-flex">
+                        <img src="<?=base_url();?>/public/uploads/avatar/<?= $row->avatar ?>" alt="avatar" class="img-fluid"> -->
                         <div class="p-3 mb-2 rounded bg-white">
                         	<div class="d-flex align-items-center justify-content-between" style="font-size: 0.8rem">
                                 <div class="d-flex align-items-center">
@@ -39,7 +39,7 @@
                             <br/>
                             <a href="">Like</a>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 <?php endforeach;?>
             </div>
         </div>
