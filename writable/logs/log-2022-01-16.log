@@ -1,0 +1,16 @@
+CRITICAL - 2022-01-16 04:40:33 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::get_where()
+#0 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(15): App\Models\Post_model->get_posts()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#6 {main}
+CRITICAL - 2022-01-16 04:40:41 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::get_where()
+#0 /home/alfath2/Downloads/ci4-blog/app/Controllers/Home.php(15): App\Models\Post_model->get_posts()
+#1 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(825): App\Controllers\Home->index()
+#2 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController()
+#3 /home/alfath2/Downloads/ci4-blog/system/CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest()
+#4 /home/alfath2/Downloads/ci4-blog/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /home/alfath2/Downloads/ci4-blog/system/Commands/Server/rewrite.php(43): require_once('/home/alfath2/D...')
+#6 {main}
