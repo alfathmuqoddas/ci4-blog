@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('form/(:segment)', 'Form::view/$1');
 $routes->get('form', 'Form::index');
+$routes->get('users/details/(:segment)', 'Users::show_user/$1');
 
 /*
  * --------------------------------------------------------------------

@@ -94,4 +94,18 @@ class Users extends Controller{
 
         return redirect()->to('/');
     }
+
+    public function show_user($id)
+    {
+        $db = db_connect();
+        $data['user'] = $db->table('user2')->getWhere(['id' => $id])->getRow();
+
+        $data['posts'] = $db->table('posts')->getWhere(['user_id' => $id])->getResult();
+
+        $data['title'] = 'User Details';
+
+        echo view('templates/header', $data);
+        echo view('users/user_detail', $data);
+        echo view('templates/footer');
+    }
 }

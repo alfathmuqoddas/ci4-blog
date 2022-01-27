@@ -22,8 +22,10 @@ class Posts extends Controller
         return redirect()->to('/');
 	}
 
-	public function like()
+	public function delete($id)
 	{
+		$db = db_connect();
+		$builder = $db->table('posts');
 		
 	}
 }

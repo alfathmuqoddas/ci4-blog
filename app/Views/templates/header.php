@@ -20,13 +20,12 @@
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	      <div class="navbar-nav ms-auto">
-	        <a class="nav-link active" href="<?php echo base_url(); ?>">Home</a>
 	        <?php if(!session()->get('isLoggedIn')) : ?>
 	        <a class="nav-link" href="<?php echo base_url(); ?>/users/login">Login</a>
 	        <a class="nav-link" href="<?php echo base_url(); ?>/users/register">Register</a>
 	    	<?php endif; ?>
 	    	<?php if(session()->get('isLoggedIn')) : ?>
-	    	<a class="nav-link" href="<?php echo base_url(); ?>users/profile"><?= session()->get('username') ?></a>
+	    	<a class="nav-link" href="/users/details/<?= session()->get('id') ?>"><?= session()->get('username') ?></a>
 	    	<a class="nav-link" href="<?php echo base_url(); ?>/users/logout">Logout</a>
 	    	<?php endif; ?>
 	      </div>

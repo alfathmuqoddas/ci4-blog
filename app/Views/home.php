@@ -37,7 +37,6 @@
                             </div>
                             <td><?= $row->body;?></td>
                             <br/>
-                            <a href="">Like</a>
                         </div>
                     <!-- </div> -->
                 <?php endforeach;?>
