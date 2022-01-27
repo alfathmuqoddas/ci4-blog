@@ -18,7 +18,7 @@ class Posts extends Controller
 		];
 
 		$builder->insert($data);
-        session()->setFlashdata('msg_success', 'Data uploaded');
+        session()->setFlashdata('msg_success', 'Shouts posted successfully');
         return redirect()->to('/');
 	}
 
@@ -26,6 +26,8 @@ class Posts extends Controller
 	{
 		$db = db_connect();
 		$builder = $db->table('posts');
+		$builder->delete(['id' => $id]);
+		return redirect()->back()->with('msg_warning', 'Post deleted');
 		
 	}
 }

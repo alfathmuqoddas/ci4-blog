@@ -1,4 +1,4 @@
-<div class="container py-5" style="min-height: 71vh;">
+    <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-5">
                 <h2>Register User</h2>
@@ -33,6 +33,7 @@
                         <button type="submit" class="btn btn-dark">Signup</button>
                     </div>
                 <?php echo form_close(); ?>
+                <p>Already a user? <a href="<?php echo base_url(); ?>/users/register">login now!</a>
             </div>
         </div>
     </div>

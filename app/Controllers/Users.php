@@ -100,7 +100,7 @@ class Users extends Controller{
         $db = db_connect();
         $data['user'] = $db->table('user2')->getWhere(['id' => $id])->getRow();
 
-        $data['posts'] = $db->table('posts')->getWhere(['user_id' => $id])->getResult();
+        $data['posts'] = $db->table('posts')->orderBy('id', 'DESC')->getWhere(['user_id' => $id])->getResult();
 
         $data['title'] = 'User Details';
 
